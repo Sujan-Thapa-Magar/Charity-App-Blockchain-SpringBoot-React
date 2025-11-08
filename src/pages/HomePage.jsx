@@ -55,7 +55,7 @@ const Homepage = () => {
                 Donate Now & Get Started
               </button>
               <a
-                href="#learn-more"
+                href="blockchain-tracker"
                 className={`py-3 px-8 text-lg font-bold rounded-full border-2 transition ${heroAnchorClasses}`}
               >
                 View Blockchain Ledger
