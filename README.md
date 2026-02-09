@@ -1,20 +1,40 @@
-<<<<<<< HEAD
-# Donation-Application
-=======
-# React + Vite
+# Charity App #
+### This is Charity App Build with Java SpringBoot, React Frontend and Ethereum Smart Contract with HardhatV2 ###
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Running the Project ##
+.env file for smartcontract
+```js
+PRIVATE_KEY=wallet_private_key
+SEPOLIA_RPC_URL=https://eth-sepolia.g.alchemy.com/v2/YOUR_API_KEY
+MAINNET_RPC_URL=https://eth-mainnet.g.alchemy.com/v2/YOUR_API_KEY
+ETHERSCAN_API_KEY=YOUR_API_KEY
+```
+for backend appliation.properties
+```js
+spring.application.name=Charity-Blockchain
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.datasource.url=jdbc:mysql://localhost:3306/charity
+spring.datasource.username=root
+spring.datasource.password=
+app.upload.dir=${user.home}/charity/logo
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=meric5sapkota@gmail.com
+spring.mail.password=akdt kijn xbmt beyi //this is outdated password so dont waste your time lol
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+```
 
-Currently, two official plugins are available:
+Then Go to frontend and type following 
+```bash
+npm run dev
+```
+The application will be running in port:3000
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 1d29f29 (Homepage with darkmode)
+For backend to successfully run, you need to have 
+_mysql server running on port 3306_
